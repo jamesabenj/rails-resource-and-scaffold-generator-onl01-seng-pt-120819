@@ -120,3 +120,58 @@ Migrating to CreateArticles (20200527173547)
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-27 17:36:23.961171"], ["updated_at", "2020-05-27 17:36:23.961171"]]
   [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 71.105.123.240 at 2020-05-27 17:36:54 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (14.1ms)
+Completed 200 OK in 29ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.105.123.240 at 2020-05-27 17:36:54 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 71.105.123.240 at 2020-05-27 17:37:12 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 573ms (Views: 570.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles" for 71.105.123.240 at 2020-05-27 17:37:13 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as */*
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 71.105.123.240 at 2020-05-27 17:37:16 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+Started GET "/articles" for 71.105.123.240 at 2020-05-27 17:37:16 +0000
+Cannot render console from 71.105.123.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as */*
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+  Rendered articles/_form.html.erb (76.6ms)
+  Rendered articles/new.html.erb within layouts/application (88.9ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 122ms (Views: 116.9ms | ActiveRecord: 0.8ms)
+
+
